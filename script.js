@@ -658,4 +658,12 @@
     }
   });
 
+  $('.article-body img').on('click', function() {
+		$.fancybox.open([
+		{
+			src : $(this).attr("src"),
+			opts : {},
+		},]);
+	});
+
 })();
